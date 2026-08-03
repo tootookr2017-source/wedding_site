@@ -1141,3 +1141,179 @@ box-shadow:
 0 30px 60px rgba(212,175,55,.45);
 
 }
+/* =========================================
+   PREMIUM HEART RAIN
+========================================= */
+
+.heart{
+    position:fixed;
+    top:-20px;
+    font-size:18px;
+    color:#d8a6ad;
+    opacity:.7;
+    pointer-events:none;
+    animation:fall linear infinite;
+    z-index:-5;
+}
+
+
+@keyframes fall{
+
+0%{
+    transform:
+    translateY(-10vh)
+    rotate(0deg);
+    opacity:0;
+}
+
+
+20%{
+    opacity:.8;
+}
+
+
+100%{
+
+    transform:
+    translateY(110vh)
+    rotate(360deg);
+
+    opacity:0;
+
+}
+
+}
+
+
+/* Golden Floating Dust */
+
+.dust{
+
+position:fixed;
+
+width:6px;
+height:6px;
+
+background:#d8b46a;
+
+border-radius:50%;
+
+filter:blur(.5px);
+
+opacity:.6;
+
+animation:
+dustFloat 12s infinite ease-in-out;
+
+}
+
+
+@keyframes dustFloat{
+
+
+0%,100%{
+
+transform:
+translateY(0)
+translateX(0);
+
+}
+
+
+50%{
+
+transform:
+translateY(-80px)
+translateX(50px);
+
+}
+
+}
+
+
+
+/* Envelope Luxury Glow */
+
+.envelope{
+
+filter:
+drop-shadow(
+0 35px 60px rgba(174,130,70,.25)
+);
+
+}
+
+
+.envelope::after{
+
+content:"";
+
+position:absolute;
+
+inset:-30px;
+
+background:
+
+radial-gradient(
+circle,
+rgba(212,175,90,.25),
+transparent 65%
+);
+
+z-index:-1;
+
+animation:
+glowPulse 4s infinite;
+
+}
+
+
+@keyframes glowPulse{
+
+0%,100%{
+opacity:.3;
+transform:scale(.9);
+}
+
+50%{
+
+opacity:.8;
+transform:scale(1.1);
+
+}
+
+}
+
+
+
+/* Luxury Title */
+
+.main-title{
+
+font-size:105px;
+
+text-shadow:
+
+0 5px 25px rgba(180,140,80,.25);
+
+}
+
+
+
+.small-title{
+
+font-size:20px;
+
+letter-spacing:12px;
+
+}
+
+
+
+.subtitle{
+
+font-size:27px;
+
+color:#81766b;
+
+}
