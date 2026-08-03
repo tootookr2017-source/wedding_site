@@ -161,7 +161,38 @@ Tap anywhere on the invitation
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 
 <script src="script.js"></script>
+<script>
 
+function createHearts(){
+
+for(let i=0;i<35;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="♥";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(5+Math.random()*8)+"s";
+
+heart.style.animationDelay=
+Math.random()*8+"s";
+
+
+document.body.appendChild(heart);
+
+}
+
+}
+
+
+createHearts();
+
+
+</script>
 </body>
 
 </html>
